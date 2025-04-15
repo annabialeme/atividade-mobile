@@ -10,8 +10,8 @@ export default function Projeto1Stack() {
     const aluno = dados [0];
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Home">{(props) =>HomeScreen {...props} aluno={aluno} />}</Stack.Screen>
-            <Stack.Screen name="Profile">{(props) =>ProfileScreen {...props} aluno={aluno} />}</Stack.Screen>
+            <Stack.Screen name="Home">{(props) =>< HomeScreen {...props} aluno={nome} />}</Stack.Screen>
+            <Stack.Screen name="Profile">{(props) =><ProfileScreen {...props} aluno={nome} />}</Stack.Screen>
         </Stack.Navigator>
     );
 }

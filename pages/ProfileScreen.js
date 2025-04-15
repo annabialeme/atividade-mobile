@@ -1,7 +1,7 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, SafeAreaView, ScrollView, Image} from "react-native";
 
-export default function ProfileScreen() {
+export default function ProfileScreen({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.scrollContainer}>
@@ -14,6 +14,8 @@ export default function ProfileScreen() {
 
 const styles = StyleSheet.create({
     container: {
-
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
     }
 })
