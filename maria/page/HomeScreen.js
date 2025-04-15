@@ -9,4 +9,4 @@ export default function Home() {  {navigation}} {
         <Button title="Ir para a outra pagina" onPress={() => navigation.navigate("ProfileScreen")}/>
         </View>
     )
-}
+} 
