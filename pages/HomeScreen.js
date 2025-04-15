@@ -7,8 +7,8 @@ export default function Home ({ navigation, aluno }) {
             <ScrollView style={styles.scrollContainer}>
                 <TextInput style={styles.input} placeholder="Buscar música" onChangeText={text => setInputText(text)} />
                 <FlatList data={aluno.itens} keyExtractor={(index) => index.toString()} renderItem={({ item }) => <Text>{item}</Text>} />
-                <TouchableOpacity onPress={() => navigation.navigate("Detalhes")}/>
-                <Text>Ver Detalhes</Text>
+                <TouchableOpacity onPress={() => navigation.navigate("Profile")}/>
+                <Text>Ver Perfil</Text>
             </ScrollView>
         </SafeAreaView>
     );
