@@ -1,17 +1,18 @@
-"use client"
-import React from "react"
+import { useState } from "react";
+import {View, Text} from "react-native";
 
-export default function Home() {
-    return (
-        <div className={styles.header}>
-            <div className={styles.image}>
-                <img src="./eu.jpg"></img>
-                <div className={styles.p}>
-                    <p className={styles.pheader}>
+import Card from '../components/Card'
 
-                    </p>
-                </div>
-            </div>
-        </div>
-    )
+return (
+    <Card/>
+)
+
+export default function Home({titulo,texto}) {
+
+    <View style={styles.container}>
+        <Text>
+            {titulo}: {texto}
+        </Text>
+    </View>
+    
 }
