@@ -8,13 +8,8 @@ export default function ProfileScreen({ navigation, aluno }) {
                 <Text>Detalhes de {aluno.nome}</Text>
                 <Button title="Voltar" onPress={() => navigation.goBack()} />
                 <Image source={require("../assets/img/fotovalentim.png")} style={styles.image} />
+                <Text style={styles.title}></Text>
             </ScrollView>
         </SafeAreaView>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-
-    }
-})
