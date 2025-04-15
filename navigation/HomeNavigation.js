@@ -1,8 +1,7 @@
 import React from "react";
-import HomeScreen from "../pages/HomeScreen";
-import ProfileScreen from "../pages/ProfileScreen";
-import { Icon } from "react-native-elements";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Projeto1Stack from "../projetos/Projeto1Stack";
+import Icon from "react-native-vector-icons/Ionicons";
 
 const Tab = createBottomTabNavigator();
 
