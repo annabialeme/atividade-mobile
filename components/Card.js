@@ -1,14 +1,18 @@
 import React from "react";
 import {View, Text, StylesSheet} from "react-native";
-import { boolean } from "yargs";
+import { ScrollView } from "react-native-web";
 
 const Card = ({title}) => {
     return (
-        <View style={styles.card}>
+        <SafeAreaView style={styles.container}>
+            <ScrollView style={styles.scroll}>
+            <View style={styles.card}>
             <View style={styles.cardContent}>
                 <Text style={styles.title}>{title}</Text>
             </View>
         </View>
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 
