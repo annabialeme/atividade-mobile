@@ -1,13 +1,14 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
-import { SafeAreaView, ScrollView, TextInput, View } from "react-native-web";
+import { SafeAreaView, ScrollView, TextInput, TouchableOpacity } from "react-native";
 
-export default function Home ({ navigation }) {
+export default function Home ({ navigation, aluno }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.scrollContainer}>
                 <TextInput style={styles.input} placeholder="Buscar música" onChangeText={text => setInputText(text)} />
-                <TouchableOpacity style={styles.button} />
+                <FlatList data={aluno.itens} keyExtractor={(index) => index.toString()} renderItem={({ item }) => <Text>{item}</Text>} />
+                <TouchableOpacity onPress={() => navigation.navigate("Detalhes")}/>
+                <Text>Ver Detalhes</Text>
             </ScrollView>
         </SafeAreaView>
     );
