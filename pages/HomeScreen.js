@@ -1,6 +1,6 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
-import { SafeAreaView, ScrollView, TextInput, View } from "react-native-web";
+import { SafeAreaView, ScrollView, TextInput } from "react-native-web";
 
 export default function Home ({ navigation }) {
     return (
