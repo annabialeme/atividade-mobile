@@ -3,6 +3,8 @@ import HomeScreen from "../pages/HomeScreen";
 import ProfileScreen from "../pages/ProfileScreen";
 import { Icon } from "react-native-elements";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Card from "../layout2/Card";
+import Home from "../layout2/home";
 
 const Tab = createBottomTabNavigator();
 
@@ -19,6 +21,12 @@ export default function HomeNavigation() {
             <Tab.Screen name="Profile" component={ProfileScreen}options={{
                     tabBarIcon: ({ color, size }) => ( // Define o ícone da aba usando o componente Icon
                         <Icon name="person" color={color} size={size} />
+                    ),
+                }}
+            />
+            <Tab.Screen name="Profile" component={ProfileScreen}options={{
+                    tabBarIcon: ({ color, size }) => ( // Define o ícone da aba usando o componente Icon
+                        <Icon name="close" color={color} size={size} />
                     ),
                 }}
             />
