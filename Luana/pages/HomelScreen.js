@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 
-const MobileScreen = () => {
+export default HomelScreen = () => {
 return (
 <ScrollView contentContainerStyle={styles.container}>
 
