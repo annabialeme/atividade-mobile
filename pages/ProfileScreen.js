@@ -12,3 +12,9 @@ export default function ProfileScreen({ navigation, aluno }) {
         </SafeAreaView>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+
+    }
+})
