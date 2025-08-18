@@ -1,11 +1,13 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Home from "../pages/Home"
 import Projeto1Stack from "../projetos/Projeto1Stack";
 import Projeto2Stack from "../projetos/Projeto2Stack";
 import Projeto3Stack from "../projetos/Projeto3Stack";
 import Projeto4Stack from "../projetos/Projeto4Stack";
 import Projeto5Stack from "../projetos/Projeto5Stack";
 import Icon from "react-native-vector-icons/Ionicons";
+
 
 const Tab = createBottomTabNavigator();
 
@@ -26,6 +28,15 @@ export default function HomeNavigation() {
                     ),
                 }}
             />
+            <Tab.Screen name="Home" component={Projeto2Stack}
+            options={{
+                    tabBarIcon: ({ color, size }) => ( // Define o ícone da aba usando o componente Icon
+                        <Icon name="close" color={color} size={size} />
+                    ),
+                }}
+            />
+
+        
             <Tab.Screen
                 name="Projeto 3"
                 component={Projeto3Stack}
